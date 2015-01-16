@@ -1,4 +1,4 @@
-.edx-uchile-btn(@fg-color, @bg-color) {
+.uchile-btn(@fg-color, @bg-color) {
     .square(auto);
 
     font: inherit;
@@ -35,18 +35,18 @@
     }
 
     &:focus, &:active {
-        .edx-uchile-btn-hover(@fg-color, @bg-color);
+        .uchile-btn-hover(@fg-color, @bg-color);
 
         border-color: @bg-color;
         outline: none;
     }
 
     &:hover {
-        .edx-uchile-btn-hover(@fg-color, @bg-color);
+        .uchile-btn-hover(@fg-color, @bg-color);
     }
 }
 
-.edx-uchile-btn-hover(@fg-color, @bg-color) {
+.uchile-btn-hover(@fg-color, @bg-color) {
     background: none;
     background-color: @fg-color;
     color: @bg-color;
@@ -62,8 +62,8 @@
     }
 }
 
-.edx-uchile-btn-disabled(@fg-color: @color-disabled) {
-    .edx-uchile-btn(@fg-color, @white);
+.uchile-btn-disabled(@fg-color: @color-disabled) {
+    .uchile-btn(@fg-color, @white);
 
     cursor: default;
 }

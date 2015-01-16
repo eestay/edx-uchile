@@ -1,5 +1,5 @@
 > .login {
-    .edx-uchile-container();
+    .uchile-container();
 
     margin-top: @layout-top-spacing;
     background: none;
@@ -24,10 +24,10 @@
 
         form {
             .status {
-                .edx-uchile-alert();
+                .uchile-alert();
 
                 &.submission-error {
-                    .edx-uchile-alert-error();
+                    .uchile-alert-error();
                 }
             }
 
@@ -67,19 +67,19 @@
             }
 
             div.squaredThree {
-                .edx-uchile-checkbox();
+                .uchile-checkbox();
             }
 
             input[type=text],
             input[type=email],
             input[type=password],
             textarea {
-                .edx-uchile-input();
+                .uchile-input();
             }
 
             .form-actions {
                 button[type=submit] {
-                    .edx-uchile-btn(@white, @color-secondary);
+                    .uchile-btn(@white, @color-secondary);
 
                     @media (min-width: @screen-md-min) {
                         .square(auto);

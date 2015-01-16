@@ -4,8 +4,11 @@
 ---
 
 edxapp_use_custom_theme: true
-edxapp_theme_name: edx-uchile
+edxapp_theme_name: uchile
 edxapp_theme_source_repo: "https://github.com/beacloudgenius/edx-theme.git"
 edxapp_theme_version: HEAD
+EDXAPP_LOCAL_GIT_IDENTITY: '/edx/app/edxapp/.ssh/id_rsa'
+EDXAPP_USE_GIT_IDENTITY: false
 edx_platform_repo: "https://github.com/edx/edx-platform.git"
 edx_platform_version: release
+
