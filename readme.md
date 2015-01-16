@@ -26,7 +26,8 @@ Run `grunt test` to lint your source files as well.
 ## Installation
 
 Create /edx/app/edx_ansible/server-vars.yml
-
+follow the sample server-vars.yml file in this repositor
+y
 Update file permissions
 ```
 sudo chown edx-ansible:edx-ansible /edx/app/edx_ansible/server-vars.yml
