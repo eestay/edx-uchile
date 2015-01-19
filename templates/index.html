@@ -20,7 +20,6 @@
   <header>
     <div class="outer-wrapper">
       <div class="title">
-          <img src="${static.url('themes/uchile/images/uchile-pano.jpg')}">
         <hgroup>
           % if homepage_overlay_html:
             ${homepage_overlay_html}
@@ -31,8 +30,7 @@
               <h1>${_("The Future of Cloud Training")}</h1>
             % endif
             <h2>${_("Realize your dream, anywhere, anytime.")}</h2>
-          % endif    -A INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
-
+          % endif
         </hgroup>
 
         ## Disable social buttons for non-edX sites
@@ -44,8 +42,7 @@
 
             <div class="secondary-actions">
               <div class="social-sharing">
-                <div class="sharing-message">${_("Stay up to date with all {platform_name} has to offer!").format(platform_name=setting    -A INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
-s.PLATFORM_NAME)}</div>
+                <div class="sharing-message">${_("Stay up to date with all {platform_name} has to offer!").format(platform_name=settings.PLATFORM_NAME)}</div>
                 <a href="https://twitter.com/beacloudgenius" class="share">
                   <img src="${static.url('images/social/twitter-sharing.png')}">
                 </a>
