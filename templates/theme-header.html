@@ -10,13 +10,13 @@
 <%block name="navigation_logo">
   ${platform_name()}
 </%block>
-## barra custom de menu
-<%block  name="menu_custom">
-    <p>custom menu here</p>
-</%block>
 
 ## When unauthenticated, only show the about page link
 <%block name="navigation_global_links">
         <p>custom menu here</p>
-
+          <li class="nav-global-04">
+            <a class="" href="/register">${_("Nosotros")}</a>
+            <a class="" href="/register">${_("Cursos")}</a>
+            <a class="" href="/register">${_("Proyecto Bicentenario")}</a>
+          </li>
 </%block>
