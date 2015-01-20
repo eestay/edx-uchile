@@ -24,11 +24,63 @@
               <p style="text-align:justify">EdX offers interactive online classes and MOOCs from the world’s best universities, colleges and organizations. Online courses from MITx, HarvardX, BerkeleyX, UTx and many other universities. Topics include biology, business, chemistry, computer science, economics, finance, electronics, engineering, food and nutrition, history, humanities, law, literature, math, medicine, music, philosophy, physics, science, statistics and more. EdX is a non-profit online initiative created by founding partners Harvard and MIT.</p>
           </div>
           <div style="float: left; width: 20; padding: 30px;">
-              <p>div2</p>
+              <p>Nosotros</p>
+              <nav >
+              <ul>
+                    %if settings.MKTG_URL_LINK_MAP.get('ABOUT'):
+                    <li>
+                      <a id="about" href="${marketing_link('ABOUT')}">${_("About")}</a>
+                    </li>
+                    %endif
+                    %if settings.MKTG_URL_LINK_MAP.get('FAQ'):
+                    <li>
+                      <a id="faq" href="${marketing_link('FAQ')}">${_("FAQ")}</a>
+                    </li>
+                    %endif
+                    %if settings.MKTG_URL_LINK_MAP.get('CONTACT'):
+                    <li>
+                      <a id="contact" href="${marketing_link('CONTACT')}">${_("Contact")}</a>
+                    </li>
+                    %endif
+                    %if settings.MKTG_URL_LINK_MAP.get('TOS'):
+                    <li>
+                      <a href="${marketing_link('TOS')}">${_("Terms of Service")}</a>
+                    </li>
+                    %endif
+                    %if settings.MKTG_URL_LINK_MAP.get('HONOR'):
+                    <li>
+                      <a href="${marketing_link('HONOR')}">${_("Honor Code")}</a>
+                    </li>
+                    %endif
+                    %if settings.MKTG_URL_LINK_MAP.get('PRIVACY'):
+                    <li>
+                      <a href="${marketing_link('PRIVACY')}">${_("Privacy Policy")}</a>
+                    </li>
+                    %endif
+                </ul>
+              </nav>
           </div>
           <div style="float: left; width: 20%;padding: 30px;">
-              <p>div3</p>
+              <p>Follow Us</p>
+              
+              <nav >
+                  <lu>
+                           <li class="social-item"><a href="http://www.facebook.com/beacloudgenius" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                    </li>
+                    <li class="social-item"><a href="http://www.instagram.com/beacloudgenius" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                    </li>
+                    <li class="social-item"><a href="https://www.youtube.com/channel/UCvygomQdqFv_p0c00EYufPA" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+                    </li>
+                    <li class="social-item"><a href="http://www.twitter.com/beacloudgenius" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                    </li>
+                    <li class="social-item"><a href="https://plus.google.com/+NileshLondheHere/photos" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+                    </li>
+                    <li class="social-item"><a href="https://www.linkedin.com/edu/alumni?name=Cloud+Genius" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                    </li>
+                <lu>
+              </nav>
           </div>
+          
       </div>
       
     <nav class="nav">
