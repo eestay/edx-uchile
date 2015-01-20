@@ -84,52 +84,6 @@
       </div>
                    <p>&nbsp;</p>
 
-    <nav class="nav">
-      <ul>
-        %if settings.MKTG_URL_LINK_MAP.get('ABOUT'):
-        <li>
-          <a id="about" href="${marketing_link('ABOUT')}">${_("About")}</a>
-        </li>
-        %endif
-        %if settings.MKTG_URL_LINK_MAP.get('FAQ'):
-        <li>
-          <a id="faq" href="${marketing_link('FAQ')}">${_("FAQ")}</a>
-        </li>
-        %endif
-        %if settings.MKTG_URL_LINK_MAP.get('CONTACT'):
-        <li>
-          <a id="contact" href="${marketing_link('CONTACT')}">${_("Contact")}</a>
-        </li>
-        %endif
-        %if settings.MKTG_URL_LINK_MAP.get('TOS'):
-        <li>
-          <a href="${marketing_link('TOS')}">${_("Terms of Service")}</a>
-        </li>
-        %endif
-        %if settings.MKTG_URL_LINK_MAP.get('HONOR'):
-        <li>
-          <a href="${marketing_link('HONOR')}">${_("Honor Code")}</a>
-        </li>
-        %endif
-        %if settings.MKTG_URL_LINK_MAP.get('PRIVACY'):
-        <li>
-          <a href="${marketing_link('PRIVACY')}">${_("Privacy Policy")}</a>
-        </li>
-        <li class="social-item"><a href="http://www.facebook.com/beacloudgenius" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
-        </li>
-        <li class="social-item"><a href="http://www.instagram.com/beacloudgenius" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
-        </li>
-        <li class="social-item"><a href="https://www.youtube.com/channel/UCvygomQdqFv_p0c00EYufPA" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
-        </li>
-        <li class="social-item"><a href="http://www.twitter.com/beacloudgenius" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-        </li>
-        <li class="social-item"><a href="https://plus.google.com/+NileshLondheHere/photos" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
-        </li>
-        <li class="social-item"><a href="https://www.linkedin.com/edu/alumni?name=Cloud+Genius" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
-        </li>
-        %endif
-      </ul>
-    </nav>
     <div>
              <p>&nbsp;</p>
       <p class="copyright">${_(u"© 2011-2015 {platform_name}, all rights reserved.").format(platform_name=platform_name())}
