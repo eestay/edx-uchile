@@ -12,6 +12,7 @@
   homepage_promo_video_youtube_id = microsite.get_value('homepage_promo_video_youtube_id', "SCXWGBImpNA")
   show_partners = microsite.get_value('show_partners', False)
   platform_name = microsite.get_value('platform_name', "UAbierta")
+
 %>
 
 <section class="home">
@@ -34,7 +35,7 @@
         ## Disable social buttons for non-edX sites
         % if not self.theme_enabled():
           <section class="actions">
-            <div clas|slice:":10"s="main-cta">
+            <div class="main-cta">
               <a href="#signup-modal" id="signup_action" class="find-courses" rel="leanModal">${_("Sign Up")}</a>
             </div>
 
@@ -71,14 +72,14 @@
       % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
         <section class="courses">
             <ul class="courses-listing">
-            %for course in courses |slice:":6":
+            %for course in courses:
               <li class="courses-listing-item">
                 <%include file="course.html" args="course=course" />
               </li>
             %endfor
             </ul>
         </section>
-      % endifhomepage_overlay_html
+      % endif
 
     </section>
   </section>
