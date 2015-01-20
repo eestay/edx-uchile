@@ -10,9 +10,9 @@
   homepage_overlay_html = microsite.get_value('homepage_overlay_html')
   show_homepage_promo_video = microsite.get_value('show_homepage_promo_video', False)
   homepage_promo_video_youtube_id = microsite.get_value('homepage_promo_video_youtube_id', "SCXWGBImpNA")
-  show_partners = microsite.get_value('show_partners', True)
+  show_partners = microsite.get_value('show_partners', False)
   platform_name = microsite.get_value('platform_name', "UAbierta")
-
+  course_index_overlay_logo_file = microsite.get_value('course_index_overlay_logo_file', "images/curso.gif")
 %>
 
 <section class="home">
@@ -79,7 +79,7 @@
             %endfor
             </ul>
         </section>
-      % endif
+      % endifhomepage_overlay_html
 
     </section>
   </section>
