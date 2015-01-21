@@ -2,7 +2,7 @@
 # sudo chown edx-ansible:edx-ansible /edx/app/edx_ansible/server-vars.yml
 # sudo /edx/bin/update edx-platform release
 ---
-
+EDXAPP_PLATFORM_NAME: 'UABIERTA'
 edxapp_use_custom_theme: true
 edxapp_theme_name: uchile
 edxapp_theme_source_repo:  "git@github.com:elias99/edx-uchile.git"
