@@ -16,9 +16,20 @@ list-style: none;
 float: right;
 padding-left: 10px;
 }
+.navbar {
+position: relative;
+min-height: 50px;
+margin-bottom: 0px;
+border: 1px solid transparent;
+background-color: #fff;
+}
 .navbar-nav {
 float: left;
 margin-top: 50px;
+}
+.navbar-static-top {
+border-radius: 0;
+background-color: #fff;
 }
 .view-login header.global, .view-login header.global-new, .view-login header.global.slim, .view-passwordreset header.global, .view-passwordreset header.global-new, .view-passwordreset header.global.slim, .view-register header.global, .view-register header.global-new, .view-register header.global.slim, body header.global, body header.global-new, body header.global.slim {
 width: auto;
@@ -33,7 +44,7 @@ box-shadow: none;
 border-radius: 0!important;
 }
 
-.cta cta-login{
+.cta cta-register{
 width: auto;
 height: auto;
 font: inherit;
