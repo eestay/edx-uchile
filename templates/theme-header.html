@@ -14,7 +14,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#" class="navbar-brand">Bootstrap</a>
+      <a href="#" class="navbar-brand"><%block name="navigation_logo">
+  ${platform_name()}
+</%block></a>
     </div>
     <nav class="navbar-collapse bs-navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
       <ul class="nav navbar-nav">
@@ -39,9 +41,7 @@
 </header>
 </%block>
 
-<%block name="navigation_logo">
-  ${platform_name()}
-</%block>
+
 
 ## When unauthenticated, only show the about page link
 <%block name="navigation_global_links">
