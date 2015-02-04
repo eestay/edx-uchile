@@ -83,3 +83,8 @@ header.global .nav-courseware li, header.global .nav-courseware div {
 display: inline-block;
 margin-top: 10px;
 }
+.view-login header.global-new>nav .nav-global a.cta-register,.view-login header.global.slim>nav .nav-global a.cta-register,.view-login header.global>nav .nav-global a.cta-register,.view-passwordreset header.global-new>nav .nav-global a.cta-register,.view-passwordreset header.global.slim>nav .nav-global a.cta-register,.view-passwordreset header.global>nav .nav-global a.cta-register,.view-register header.global-new>nav .nav-global a.cta-register,.view-register header.global.slim>nav .nav-global a.cta-register,.view-register header.global>nav .nav-global a.cta-register,body header.global-new>nav .nav-global a.cta-register,body header.global.slim>nav .nav-global a.cta-register,body header.global>nav .nav-global a.cta-register:hover
+{
+	background-color: #00aff0;
+	color: #fff;
+}
