@@ -83,3 +83,9 @@ a.cta-register:hover{
 color:#fff;
 background-color: #00aff0;  
 }
+header.global .nav-courseware {
+float: right;
+margin-top: 5px;
+list-style: none;
+margin: 10px;
+}
