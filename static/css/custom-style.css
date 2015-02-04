@@ -1,3 +1,70 @@
 header.global h1.logo {
 display: none;
 }
+.view-login .content-wrapper, .view-passwordreset .content-wrapper, .view-register .content-wrapper, body .content-wrapper {
+width: auto;
+height: auto;
+margin: 0;
+padding: 0;
+background: 0 0;
+padding-bottom: 40px;
+background-color: #fff;
+}
+header.global .nav-global {
+margin-top: 10px;
+list-style: none;
+float: right;
+padding-left: 10px;
+}
+.navbar-nav {
+float: left;
+margin-top: 50px;
+}
+.view-login header.global, .view-login header.global-new, .view-login header.global.slim, .view-passwordreset header.global, .view-passwordreset header.global-new, .view-passwordreset header.global.slim, .view-register header.global, .view-register header.global-new, .view-register header.global.slim, body header.global, body header.global-new, body header.global.slim {
+width: auto;
+height: auto;
+position: relative;
+min-height: 50px;
+padding: 0;
+border: 0 none;
+background-color: #fff !important;
+margin-bottom: 0;
+box-shadow: none;
+border-radius: 0!important;
+}
+
+.cta cta-login{
+width: auto;
+height: auto;
+font: inherit;
+background: 0 0;
+display: inline-block;
+font-weight: 400;
+text-align: center;
+vertical-align: middle;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+white-space: nowrap;
+font-size: 16px;
+line-height: 1.625;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+color: #00aff0;
+background-color: #fff;
+border-color: #00aff0;
+text-shadow: none;
+text-overflow: ellipsis;
+transition: all .1s ease-in;
+box-shadow: none;
+margin: 0;
+padding: .5em 1.2em;
+outline: 0;
+overflow: hidden;
+text-transform: none;
+}
