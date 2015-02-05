@@ -100,9 +100,7 @@ background-color: #108ec7;
 background-image: none;
 background-image: none;
 }
-
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-margin-right: -15px;
-margin-left: -15px;
-margin-bottom: 50px;
+.navbar-brand{
+    width: 100%;
+    height: 100%;      
 }
