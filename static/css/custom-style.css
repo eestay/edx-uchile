@@ -104,3 +104,22 @@ background-image: none;
     width: 100%;
     height: 100%;      
 }
+.navbar-toggle {
+position: relative;
+float: right;
+margin-right: 15px;
+padding: 9px 10px;
+margin-top: 8px;
+margin-bottom: 8px;
+background-color: transparent;
+background-image: none;
+border: 1px solid #00aff0;
+border-radius: 4px;
+}
+.navbar-toggle .icon-bar {
+display: block;
+width: 22px;
+height: 2px;
+border-radius: 1px;
+background-color: #00aff0;
+}
