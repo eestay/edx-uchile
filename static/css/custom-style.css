@@ -88,3 +88,21 @@ margin-top: 10px;
 	background-color: #00aff0;
 	color: #fff;
 }
+.view-login, .view-passwordreset, .view-register, body {
+background-color: #fff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+border-color: #fff;
+}
+input[type="submit"]:hover:not(:disabled), input[type="button"]:hover:not(:disabled), button:hover:not(:disabled), .button:hover:not(:disabled) {
+cursor: pointer;
+background-color: #108ec7;
+background-image: none;
+background-image: none;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+margin-right: -15px;
+margin-left: -15px;
+margin-bottom: 50px;
+}
