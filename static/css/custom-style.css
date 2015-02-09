@@ -123,3 +123,16 @@ height: 2px;
 border-radius: 1px;
 background-color: #00aff0;
 }
+.navbar-nav>li>a:hover {
+background-color: #BBEEFF;
+}
+@media (max-width: 480px){
+.view-login header.global-new>nav .nav-global, .view-login header.global.slim>nav .nav-global, .view-login header.global>nav .nav-global, .view-passwordreset header.global-new>nav .nav-global, .view-passwordreset header.global.slim>nav .nav-global, .view-passwordreset header.global>nav .nav-global, .view-register header.global-new>nav .nav-global, .view-register header.global.slim>nav .nav-global, .view-register header.global>nav .nav-global, body header.global-new>nav .nav-global, body header.global.slim>nav .nav-global, body header.global>nav .nav-global {
+display: table;
+}
+.navbar-nav {
+float: left;
+margin-top: 0px;
+width: 100%;
+}
+}
