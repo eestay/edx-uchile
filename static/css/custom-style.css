@@ -149,3 +149,7 @@ background-image: none;
 margin: 0;
 padding: 0px;
 }
+.content-wrapper>.home {
+margin: 0;
+background: #3299cc;
+}
