@@ -1,5 +1,4 @@
 .view-login header.global-new>nav, .view-login header.global.slim>nav, .view-login header.global>nav, .view-passwordreset header.global-new>nav, .view-passwordreset header.global.slim>nav, .view-passwordreset header.global>nav, .view-register header.global-new>nav, .view-register header.global.slim>nav, .view-register header.global>nav, body header.global-new>nav, body header.global.slim>nav, body header.global>nav {
-width: 1170px;
 padding: 5px;
 }
 header.global h1.logo {
@@ -160,4 +159,10 @@ background: #3299cc;
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     max-height: 300px;
+    min-height: 200px;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+display: inherit;
+max-width: 100%;
+height: auto;
 }
