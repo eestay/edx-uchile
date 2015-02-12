@@ -1,4 +1,7 @@
-nav{padding: 5px;}
+.view-login header.global-new>nav, .view-login header.global.slim>nav, .view-login header.global>nav, .view-passwordreset header.global-new>nav, .view-passwordreset header.global.slim>nav, .view-passwordreset header.global>nav, .view-register header.global-new>nav, .view-register header.global.slim>nav, .view-register header.global>nav, body header.global-new>nav, body header.global.slim>nav, body header.global>nav {
+width: 1170px;
+padding: 5px;
+}
 header.global h1.logo {
 display: none;
 }
