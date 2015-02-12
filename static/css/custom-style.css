@@ -1,3 +1,4 @@
+nav{padding: 5px;}
 header.global h1.logo {
 display: none;
 }
@@ -9,6 +10,7 @@ padding: 0;
 background: 0 0;
 padding-bottom: 40px;
 background-color: #fff;
+min-height: 0px;    
 }
 header.global .nav-global {
 margin-top: 10px;
@@ -123,9 +125,8 @@ height: 2px;
 border-radius: 1px;
 background-color: #00aff0;
 }
-.navbar-nav>li>a:hover {
-background-color: #BBEEFF;
-}
+body header.global .navbar-nav>li>a{color: #000;}
+body header.global .navbar-nav>li>a:hover{border-bottom:5px solid #00aff0;}
 @media (max-width: 480px){
 .view-login header.global-new>nav .nav-global, .view-login header.global.slim>nav .nav-global, .view-login header.global>nav .nav-global, .view-passwordreset header.global-new>nav .nav-global, .view-passwordreset header.global.slim>nav .nav-global, .view-passwordreset header.global>nav .nav-global, .view-register header.global-new>nav .nav-global, .view-register header.global.slim>nav .nav-global, .view-register header.global>nav .nav-global, body header.global-new>nav .nav-global, body header.global.slim>nav .nav-global, body header.global>nav .nav-global {
 display: table;
