@@ -15,17 +15,19 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="${static.url('themes/{theme_name}/images/portada/logo5.png'.format(theme_name=settings.THEME_NAME))}"/></a>
+            <a class="navbar-brand" href="#">
+                <img src="${static.url('themes/{theme_name}/images/portada/logo5.png'.format(theme_name=settings.THEME_NAME))}" style="float:left; padding-top: 15%;"/>
+                <img src="${static.url('themes/{theme_name}/images/portada/logo4.png'.format(theme_name=settings.THEME_NAME))}" style="float:rigth;"/>
+              </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" style="margin-top: 6%;">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
-         <a href="#"><img src="${static.url('themes/{theme_name}/images/portada/logo4.png'.format(theme_name=settings.THEME_NAME))}"/></a>
       </nav>
     </header>    
 </%block>
