@@ -189,7 +189,7 @@ border-top: 1px solid #00aff0;
 border-top-right-radius: 0;
 background-color: #fff;
 }
-.view-login header.global-new>nav .nav-global a, .view-login header.global.slim>nav .nav-global a, .view-login header.global>nav .nav-global a, .view-passwordreset header.global-new>nav .nav-global a, .view-passwordreset header.global.slim>nav .nav-global a, .view-passwordreset header.global>nav .nav-global a, .view-register header.global-new>nav .nav-global a, .view-register header.global.slim>nav .nav-global a, .view-register header.global>nav .nav-global a, body header.global-new>nav .nav-global a, body header.global.slim>nav .nav-global a, body header.global>nav .nav-global a:hover {
+.view-login header.global-new>nav .nav-global a, .view-login header.global.slim>nav .nav-global a, .view-login header.global>nav .nav-global a, .view-passwordreset header.global-new>nav .nav-global a, .view-passwordreset header.global.slim>nav .nav-global a, .view-passwordreset header.global>nav .nav-global a, .view-register header.global-new>nav .nav-global a, .view-register header.global.slim>nav .nav-global a, .view-register header.global>nav .nav-global a, body header.global-new>nav .nav-global a, body header.global.slim>nav .nav-global a:hover, body header.global>nav .nav-global a {
 font: inherit;
 font-weight: 500;
 letter-spacing: inherit;
