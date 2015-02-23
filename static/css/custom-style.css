@@ -165,6 +165,39 @@ background-color: #108ec7;
 background-image: none;
 background-image: none;
 }
+.view-login header.global-new>nav .nav-global a.cta-register, .view-login header.global.slim>nav .nav-global a.cta-register, .view-login header.global>nav .nav-global a.cta-register, .view-passwordreset header.global-new>nav .nav-global a.cta-register, .view-passwordreset header.global.slim>nav .nav-global a.cta-register, .view-passwordreset header.global>nav .nav-global a.cta-register, .view-register header.global-new>nav .nav-global a.cta-register, .view-register header.global.slim>nav .nav-global a.cta-register, .view-register header.global>nav .nav-global a.cta-register, body header.global-new>nav .nav-global a.cta-register, body header.global.slim>nav .nav-global a.cta-register, body header.global>nav .nav-global a.cta-register:hover {
+background-color: #fff;
+color: #00aff0;
+}
+.view-login header.global-new>nav ol.user>li.primary>a.dropdown, .view-login header.global.slim>nav ol.user>li.primary>a.dropdown, .view-login header.global>nav ol.user>li.primary>a.dropdown, .view-passwordreset header.global-new>nav ol.user>li.primary>a.dropdown, .view-passwordreset header.global.slim>nav ol.user>li.primary>a.dropdown, .view-passwordreset header.global>nav ol.user>li.primary>a.dropdown, .view-register header.global-new>nav ol.user>li.primary>a.dropdown, .view-register header.global.slim>nav ol.user>li.primary>a.dropdown, .view-register header.global>nav ol.user>li.primary>a.dropdown, body header.global-new>nav ol.user>li.primary>a.dropdown, body header.global.slim>nav ol.user>li.primary>a.dropdown, body header.global>nav ol.user>li.primary>a.dropdown {
+padding: 9.3px 10px;
+border-left: none;
+border-radius: 0 4px 4px 0;
+letter-spacing: normal;
+}
+.view-login header.global-new>nav ol.user ul.dropdown-menu, .view-login header.global.slim>nav ol.user ul.dropdown-menu, .view-login header.global>nav ol.user ul.dropdown-menu, .view-passwordreset header.global-new>nav ol.user ul.dropdown-menu, .view-passwordreset header.global.slim>nav ol.user ul.dropdown-menu, .view-passwordreset header.global>nav ol.user ul.dropdown-menu, .view-register header.global-new>nav ol.user ul.dropdown-menu, .view-register header.global.slim>nav ol.user ul.dropdown-menu, .view-register header.global>nav ol.user ul.dropdown-menu, body header.global-new>nav ol.user ul.dropdown-menu, body header.global.slim>nav ol.user ul.dropdown-menu, body header.global>nav ol.user ul.dropdown-menu {
+width: auto;
+height: auto;
+padding: 0;
+z-index: 10;
+top: 36px;
+left: initial;
+right: 0;
+box-shadow: none;
+border: 1px solid #00aff0;
+border-top: 1px solid #00aff0;
+border-top-right-radius: 0;
+background-color: #fff;
+}
+.view-login header.global-new>nav .nav-global a, .view-login header.global.slim>nav .nav-global a, .view-login header.global>nav .nav-global a, .view-passwordreset header.global-new>nav .nav-global a, .view-passwordreset header.global.slim>nav .nav-global a, .view-passwordreset header.global>nav .nav-global a, .view-register header.global-new>nav .nav-global a, .view-register header.global.slim>nav .nav-global a, .view-register header.global>nav .nav-global a, body header.global-new>nav .nav-global a, body header.global.slim>nav .nav-global a, body header.global>nav .nav-global a:hover {
+font: inherit;
+font-weight: 500;
+letter-spacing: inherit;
+padding: 0;
+color: #00aff0;
+text-transform: none;
+border: 0 none;
+}
 /* 2. Slide--------------------------------------------*/
 /* 2.1 Slide: dimensionado responsivo movil/escritorio-*/
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
