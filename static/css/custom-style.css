@@ -189,6 +189,10 @@ border-top: 1px solid #00aff0;
 border-top-right-radius: 0;
 background-color: #fff;
 }
+.view-howitworks .nav-global-01 a, .view-courses .nav-global-02 a, .view-schools .nav-global-03 a, .view-register .nav-global-04 a {
+text-decoration: none;
+color: #fff !important;
+}
 /* 2. Slide--------------------------------------------*/
 /* 2.1 Slide: dimensionado responsivo movil/escritorio-*/
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -220,4 +224,8 @@ background: #3299cc;
 /* 4. Footer-------------------------------------------*/
 .social-item{
 	list-style:none;
+}
+/* 5. Formularios--------------------------------------*/
+.content-wrapper>.register .content form .group-form-personalinformation, .content-wrapper>.register .content form .group-form-personalinformation2 {
+display: block;
 }
