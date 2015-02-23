@@ -161,13 +161,13 @@ border-color: #fff;
 }
 input[type="submit"]:hover:not(:disabled), input[type="button"]:hover:not(:disabled), button:hover:not(:disabled), .button:hover:not(:disabled) {
 cursor: pointer;
-background-color: #108ec7;
+background-color: #00aff0;
 background-image: none;
 background-image: none;
 }
 .view-login header.global-new>nav .nav-global a.cta-register, .view-login header.global.slim>nav .nav-global a.cta-register, .view-login header.global>nav .nav-global a.cta-register, .view-passwordreset header.global-new>nav .nav-global a.cta-register, .view-passwordreset header.global.slim>nav .nav-global a.cta-register, .view-passwordreset header.global>nav .nav-global a.cta-register, .view-register header.global-new>nav .nav-global a.cta-register, .view-register header.global.slim>nav .nav-global a.cta-register, .view-register header.global>nav .nav-global a.cta-register, body header.global-new>nav .nav-global a.cta-register, body header.global.slim>nav .nav-global a.cta-register, body header.global>nav .nav-global a.cta-register:hover {
-background-color: #fff;
-color: #00aff0;
+background-color: #00aff0;
+color: #fff;
 }
 .view-login header.global-new>nav ol.user>li.primary>a.dropdown, .view-login header.global.slim>nav ol.user>li.primary>a.dropdown, .view-login header.global>nav ol.user>li.primary>a.dropdown, .view-passwordreset header.global-new>nav ol.user>li.primary>a.dropdown, .view-passwordreset header.global.slim>nav ol.user>li.primary>a.dropdown, .view-passwordreset header.global>nav ol.user>li.primary>a.dropdown, .view-register header.global-new>nav ol.user>li.primary>a.dropdown, .view-register header.global.slim>nav ol.user>li.primary>a.dropdown, .view-register header.global>nav ol.user>li.primary>a.dropdown, body header.global-new>nav ol.user>li.primary>a.dropdown, body header.global.slim>nav ol.user>li.primary>a.dropdown, body header.global>nav ol.user>li.primary>a.dropdown {
 padding: 9.3px 10px;
@@ -188,15 +188,6 @@ border: 1px solid #00aff0;
 border-top: 1px solid #00aff0;
 border-top-right-radius: 0;
 background-color: #fff;
-}
-.view-login header.global-new>nav .nav-global a, .view-login header.global.slim>nav .nav-global a, .view-login header.global>nav .nav-global a, .view-passwordreset header.global-new>nav .nav-global a, .view-passwordreset header.global.slim>nav .nav-global a, .view-passwordreset header.global>nav .nav-global a, .view-register header.global-new>nav .nav-global a, .view-register header.global.slim>nav .nav-global a, .view-register header.global>nav .nav-global a, body header.global-new>nav .nav-global a, body header.global.slim>nav .nav-global a:hover, body header.global>nav .nav-global a {
-font: inherit;
-font-weight: 500;
-letter-spacing: inherit;
-padding: 0;
-color: #00aff0;
-text-transform: none;
-border: 0 none;
 }
 /* 2. Slide--------------------------------------------*/
 /* 2.1 Slide: dimensionado responsivo movil/escritorio-*/
