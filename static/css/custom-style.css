@@ -48,7 +48,8 @@ background-color: #fff;
 }
 .navbar-nav {
 float: left;
-margin-top: 50px;
+margin-top: 0px;
+width:100%;    
 }
 .navbar-static-top {
 border-radius: 0;
@@ -85,7 +86,7 @@ border-radius: 1px;
 background-color: #00aff0;
 }
 body header.global .navbar-nav>li>a{color: #000;}
-body header.global .navbar-nav>li>a:hover{border-bottom:5px solid #00aff0;}
+body header.global .navbar-nav>li>a:hover{background-color:#00aff0;}
 @media (max-width: 480px){
 .view-login header.global-new>nav .nav-global, .view-login header.global.slim>nav .nav-global, .view-login header.global>nav .nav-global, .view-passwordreset header.global-new>nav .nav-global, .view-passwordreset header.global.slim>nav .nav-global, .view-passwordreset header.global>nav .nav-global, .view-register header.global-new>nav .nav-global, .view-register header.global.slim>nav .nav-global, .view-register header.global>nav .nav-global, body header.global-new>nav .nav-global, body header.global.slim>nav .nav-global, body header.global>nav .nav-global {
 display: table;
