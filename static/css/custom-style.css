@@ -196,7 +196,10 @@ color: #fff !important;
 .view-login header.global-new>nav ol.user>li.primary>a.user-link, .view-login header.global.slim>nav ol.user>li.primary>a.user-link, .view-login header.global>nav ol.user>li.primary>a.user-link, .view-passwordreset header.global-new>nav ol.user>li.primary>a.user-link, .view-passwordreset header.global.slim>nav ol.user>li.primary>a.user-link, .view-passwordreset header.global>nav ol.user>li.primary>a.user-link, .view-register header.global-new>nav ol.user>li.primary>a.user-link, .view-register header.global.slim>nav ol.user>li.primary>a.user-link, .view-register header.global>nav ol.user>li.primary>a.user-link, body header.global-new>nav ol.user>li.primary>a.user-link, body header.global.slim>nav ol.user>li.primary>a.user-link, body header.global>nav ol.user>li.primary>a.user-link {
 max-width: 100%;
 }
-
+.nav-global-01 a:hover{
+text-decoration: none;
+color: #00aff0 !important;
+}
 /* 2. Slide--------------------------------------------*/
 /* 2.1 Slide: dimensionado responsivo movil/escritorio-*/
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
