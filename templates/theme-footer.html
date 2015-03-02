@@ -3,33 +3,36 @@
 <%! from microsite_configuration.templatetags.microsite import platform_name %>
 <%namespace name='static' file='static_content.html'/>
 
+    
 <footer>
   <div class="footer-container">
+      <center>
       <div name="menu-inferior">
+        <img src="${static.url('themes/{theme_name}/images/portada/logo4.png'.format(theme_name=settings.THEME_NAME))}"/>
+        <img src="${static.url('themes/{theme_name}/images/portada/logo1.png'.format(theme_name=settings.THEME_NAME))}"/>
         <img src="${static.url('themes/{theme_name}/images/portada/logo2.png'.format(theme_name=settings.THEME_NAME))}"/>
         <img src="${static.url('themes/{theme_name}/images/portada/logo3.png'.format(theme_name=settings.THEME_NAME))}"/>
-        <img src="${static.url('themes/{theme_name}/images/portada/logo4.png'.format(theme_name=settings.THEME_NAME))}"/>
-        <img src="${static.url('themes/{theme_name}/images/portada/logo5.png'.format(theme_name=settings.THEME_NAME))}"/>
-         <p>&nbsp;</p>
 
-    </div>
+         <p>&nbsp;</p>
+        </div>
+      </center> 
+      </div>    
+</footer>    
+    
+<footer style="background-color: #e4e4e4; color: #00aff0; border-bottom: 5px solid #00aff0;">
+  <div class="footer-container">
       <div>
-              <img src="${static.url('themes/{theme_name}/images/portada/banner2.png'.format(theme_name=settings.THEME_NAME))}" width="100%"/>
-            <p>&nbsp;</p>
-      </div>
-      
-      <div>
-          <div  style="float: left; width: 60%; padding: 30px;">
-              <img src="${static.url('themes/{theme_name}/images/portada/logo1.png'.format(theme_name=settings.THEME_NAME))}"/>
+          
+          <div  style="float: left; padding-bottom: 10px;">
+              <img src="${static.url('themes/{theme_name}/images/portada/logo_bajada.png'.format(theme_name=settings.THEME_NAME))}"/>
                            <p>&nbsp;</p>
 
               <p style="text-align:justify">EdX offers interactive online classes and MOOCs from the world’s best universities, colleges and organizations. Online courses from MITx, HarvardX, BerkeleyX, UTx and many other universities. Topics include biology, business, chemistry, computer science, economics, finance, electronics, engineering, food and nutrition, history, humanities, law, literature, math, medicine, music, philosophy, physics, science, statistics and more. EdX is a non-profit online initiative created by founding partners Harvard and MIT.</p>
               
-                    <p class="copyright">${_(u"© 2011-2015 {platform_name}, all rights reserved.").format(platform_name=platform_name())}
-        Powered by <a href="http://code.edx.org">Open edX.</a>
+                    <p class="copyright">${_(u"© 2011-2015 {platform_name}, todos los derechos reservados.").format(platform_name=platform_name())} <a href="http://code.edx.org">Open edX.</a>
       </p>
           </div>
-          <div style="float: left; width: 20%; padding: 30px;">
+          <div style="float: left; width: 70%;">
               <p><b>Nosotros</b></p>
               <nav style="">
               <ul style="">
@@ -66,11 +69,11 @@
                 </ul>
               </nav>
           </div>
-          <div style="float: left; width: 20%;padding: 30px;">
+          <div style="float: right; width: 30%;">
               <p><b>Follow Us</b></p>
               
-              <nav style="">
-                  <lu style="">
+              <nav>
+                  <lu class="list-inline">
                            <li class="social-item"><a href="http://www.facebook.com/beacloudgenius" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
                     </li>
                     <li class="social-item"><a href="http://www.instagram.com/beacloudgenius" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
@@ -100,4 +103,6 @@
 ##      </a>
     </div>
   </div>
+   <script src="${static.url('themes/{theme_name}/css/bootstrap.min.js'.format(theme_name=settings.THEME_NAME))}"></script>
+          
 </footer>
