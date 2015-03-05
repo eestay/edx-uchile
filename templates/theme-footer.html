@@ -66,6 +66,10 @@
                       <a href="${marketing_link('PRIVACY')}">${_("Privacy Policy")}</a>
                     </li>
                     %endif
+                    %if settings.MKTG_URL_LINK_MAP.get('Foo'):
+                    <li style="">
+                      <a href="${marketing_link('Foo')}">${_("Foo")}</a>
+                    </li>
                 </ul>
               </nav>
           </div>
