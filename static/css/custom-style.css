@@ -236,4 +236,6 @@ background: #3299cc;
 .content-wrapper>.register .content form .group-form-personalinformation, .content-wrapper>.register .content form .group-form-personalinformation2 {
 display: block;
 }
-
+.p{
+text-align: justify;
+}
