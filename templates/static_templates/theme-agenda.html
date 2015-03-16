@@ -24,7 +24,7 @@
         var arr = value.link.split('#');
         var text = value.content.split('<strong>Organiza:</strong>');
         var text2 =  text[1].split('<strong>Contacto:</strong>');
-        var thehtml = '<h3><a href="'+value.link+'" target="_blank">'+value.title+'</a></h3> <br> Fecha:'+arr[1]+" Organiza: "+text2[0];
+        var thehtml = '<h3><a href="'+value.link+'" target="_blank">'+value.title+'</a></h3> <br> <p> Fecha:'+arr[1]+" Organiza: "+text2[0]+"</p>";
         //+value.contentSnippet+'<br>'+value.content;
         $(container).append(thehtml);
       });
