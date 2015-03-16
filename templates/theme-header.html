@@ -1,4 +1,6 @@
 ## mako
+<%! from django.utils.translation import ugettext as _ %>
+<%! from microsite_configuration.templatetags.microsite import platform_name %>
 <%namespace name='static' file='/static_content.html'/>
 <%inherit file="/navigation.html"/>
 
@@ -27,6 +29,10 @@
               <li><a href="#">Agenda</a></li>
               <li><a href="#">FAQ</a></li>    
               <li><a href="#">Contacto</a></li>    
+              %if settings.MKTG_URL_LINK_MAP.get('AGENDA'):
+                    <li style="">
+                      <a href="${marketing_link('AGENDA')}">${_("Agenda")}</a>
+                    </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
