@@ -16,11 +16,16 @@
     url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
     dataType: 'json',
     success: function(data) {
-      //console.log(data.responseData.feed);
-      $(container).html('<h2>'+capitaliseFirstLetter(data.responseData.feed.title)+'</h2>');
+           //console.log(data.responseData.feed);
+      //$(container).html('<h2>'+capitaliseFirstLetter(data.responseData.feed.title)+'</h2>');
 
       $.each(data.responseData.feed.entries, function(key, value){
-        var thehtml = '<h3><a href="'+value.link+'" target="_blank">'+value.title+'</a></h3>' +'<br> <p> '+value.description+'</p> <br>';
+        //console.log(value);
+        var arr = value.link.split('#');
+        var text = value.content.split('<strong>Organiza:</strong>');
+        var text2 =  text[1].split('<strong>Contacto:</strong>');
+        var thehtml = '<h3><a href="'+value.link+'" target="_blank">'+value.title+'</a></h3>'+arr[1]+"  "+text2[0];
+        //+value.contentSnippet+'<br>'+value.content;
         $(container).append(thehtml);
       });
     }
@@ -39,7 +44,7 @@ function capitaliseFirstLetter(string) {
 
 
 
-<h1>${_("Agenda")}</h1>
+<h1>${_("Agenda Universidad de Chile")}</h1>
 
 
 <p>${_("")}</p>
