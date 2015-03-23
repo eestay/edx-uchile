@@ -24,7 +24,7 @@
         var arr = value.link.split('#');
         var text = value.content.split('<strong>Organiza:</strong>');
         var text2 =  text[1].split('<strong>Contacto:</strong>');
-        var thehtml = '<h3><a href="'+value.link+'" target="_blank">'+value.title+'</a></h3> <br> <p> Fecha: '+arr[1].substring(0,4)+"/"+arr[1].substring(4,6)+"/"+arr[1].substring(6,8)+" Organiza: "+$(text2[0]).text()+"</p>";
+        var thehtml = '<h3><a href="'+value.link+'" target="_blank">'+value.title+'</a></h3> <br> <p> Fecha: '+arr[1].substring(0,4)+"/"+arr[1].substring(4,6)+"/"+arr[1].substring(6,8)+"-"+arr[1].substring(9,14)    +" Organiza: "+$(text2[0]).text()+"</p>";
         $(container).append(thehtml);
       });
     }
