@@ -5,11 +5,6 @@
 <%block name="pagetitle">${_("In the Press")}</%block>
 
 <section class="container about">
-
-
-<h1>${_("Noticias")}</h1>
-  <div id="nouperss1" class="feedcontainer"></div>
-
 <script type="text/javascript">
 $.ajax({
     url: "http://172.27.162.14/desarrollos/edx_wp/?feed=atom",
@@ -35,4 +30,9 @@ $.ajax({
     }
 });
 </script>
+
+<h1>${_("Noticias")}</h1>
+  <div id="nouperss1" class="feedcontainer"></div>
+
+
 </section>
