@@ -10,27 +10,47 @@
 <h1>${_("Noticias")}</h1>
   <div id="nouperss1" class="feedcontainer"></div>
 
-<script type="text/javascript">
-$.ajax({
-    url: "http://172.27.162.14/desarrollos/edx_wp/?feed=atom",
-    dataType: "xml",
+
+ <script type="text/javascript" language="javascript" >
+  /**
+ * parses any RSS/XML feed through Google and returns JSON data
+ * source: http://stackoverflow.com/a/6271906/477958
+ */
+  function parseRSS(url, container) {
+  $.ajax({
+    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
+    dataType: 'json',
     success: function(data) {
-        //console.log(data);
-        var $xml = $(data),
-            items = [];
-            var categories = ""; 
-        $xml.find("entry").each(function(i) {
-            var $this = $(this);
-            console.log($this.find("title").text());
-            console.log($this.find("pubDate").text());
-            console.log($this.find("summary").text());
-            
-           
-            var thehtml = '<h3><a " target="_blank">'+$this.find("title").text()+'</a></h3> <br> <p> Fecha:'+$this.find("published").text()+" <br> "+($this.find("content").text())+"</p>";
-            $("#nouperss1").append(thehtml);
-        });
-        
+    //console.log(data.responseData.feed);
+    //$(container).html('<h2>'+capitaliseFirstLetter(data.responseData.feed.title)+'</h2>');
+
+      $.each(data.responseData.feed.entries, function(key, value){
+        console.log(value);
+        var arr = value.link;
+        var text = value.content;
+        var thehtml = '<h1><'+value.title+'</h1>  '+' <br>  <p>'+ value.content+'</p>';
+        $(container).append(thehtml);
+      });
     }
+  });
+}
+
+/**
+ * Capitalizes the first letter of any string variable
+ * source: http://stackoverflow.com/a/1026087/477958
+ */
+function capitaliseFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+  </script>
+
+  <script type="text/javascript">
+$(function(){
+  // running custom RSS functions
+  parseRSS(' http://wp.testingedx.tk?feed=atom', '#nouperss1');
+
 });
+</script>
 </script>
 </section>
