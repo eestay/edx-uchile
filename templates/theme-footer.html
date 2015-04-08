@@ -27,13 +27,14 @@
               <img src="${static.url('themes/{theme_name}/images/portada/logo_bajada_chico.png'.format(theme_name=settings.THEME_NAME))}"/>
                            <p>&nbsp;</p>
 
-              <p style="text-align:justify">EdX offers interactive online classes and MOOCs from the world’s best universities, colleges and organizations. Online courses from MITx, HarvardX, BerkeleyX, UTx and many other universities. Topics include biology, business, chemistry, computer science, economics, finance, electronics, engineering, food and nutrition, history, humanities, law, literature, math, medicine, music, philosophy, physics, science, statistics and more. EdX is a non-profit online initiative created by founding partners Harvard and MIT.</p>
+              <p style="text-align:justify"></p>
               
-                    <p class="copyright">${_(u"© 2011-2015 {platform_name}, todos los derechos reservados.").format(platform_name=platform_name())} <a href="http://code.edx.org">Open edX.</a>
+                   ## <p class="copyright">${_(u"© 2011-2015 {platform_name}, todos los derechos reservados.").format(platform_name=platform_name())} <a href="http://code.edx.org">Open edX.</a>
+                   <p class="copyright">${_(u"© Uabierta, Universidad de Chile, OpenEDX, 2015").format(platform_name=platform_name())} <a href="http://code.edx.org">Open edX.</a>
       </p>
           </div>
           <div style="float: left; width: 70%;">
-              <p><b>Nosotros</b></p>
+              <p><b></b></p>
               <nav style="">
               <ul style="">
                     %if settings.MKTG_URL_LINK_MAP.get('ABOUT'):
