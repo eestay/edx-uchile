@@ -27,7 +27,7 @@
               <h1>${_("Industry leading courses from <strong>{university_name}</strong>").format(university_name="Stanford")}</h1>
             % else:
                 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000" style="border-bottom: 5px solid #00aff0;">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="border-bottom: 5px solid #00aff0;">
 
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -91,20 +91,18 @@
 
 
       % if show_homepage_promo_video:
-      <div class="row">
-        <div class="col-md-6">
-          <blockquote class="blockquote-reverse" style="color:#fff;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </blockquote>
+      <section class="container">
+        <div class="row no-background">
+          <div class="col-md-8"><p>Universidad Abierta:<br>Democratizando el conocimiento</p></div>
+              <div class="col-md-4">
+               <a href="#video-modal" class="media" rel="leanModal">
+                 <div class="hero">
+                   <div class="play-intro"></div>
+                 </div>
+               </a>
+              </div>
         </div>
-        <div class="col-md-6">
-          <a href="#video-modal" class="media" rel="leanModal">
-            <div class="hero">
-              <div class="play-intro"></div>
-            </div>
-          </a>
-        </div>
-      </div>
+      </section>
       % endif
 
   </header>
