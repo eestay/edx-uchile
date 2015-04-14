@@ -273,3 +273,7 @@ p{
   padding: 0px;
   background-color: #3299cc;
 }
+.no-background{
+  background-color: transparent; 
+  border: none;
+}
