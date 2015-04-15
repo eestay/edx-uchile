@@ -275,6 +275,9 @@ p{
   background-color: #3299cc;
 }
 .no-background{
-  background-color: transparent; 
-  border: none;
+  background-color: transparent !important; 
+  border: none !important;
+}
+.h2-white{
+	color:#fff;
 }
