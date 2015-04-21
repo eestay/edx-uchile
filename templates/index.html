@@ -62,6 +62,9 @@
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span><img src="${static.url('themes/{theme_name}/images/portada/next.png'.format(theme_name=settings.THEME_NAME))}" class="img-responsive" style="padding-top: 30%;"></span>
   </a>
+  <script>
+    $('#carousel-example-generic').carousel();
+  </script>
 </div> 
 
 ##              <h1>${_("The Future of Cloud Training")}</h1>
@@ -166,6 +169,6 @@ padding: 10px 0;"><h2>Cursos Abiertos</h2></div>
   ## show either with or without this extra js for 3 minutes at a time.
 <script type="text/javascript">
   $(window).load(function() {$('#signup_action').trigger("click");});
-  $('#carousel-example-generic').carousel();
+
 </script>
 % endif
