@@ -14,7 +14,7 @@
   platform_name = microsite.get_value('platform_name', 'UAbierta')
 %>
 
-<section class="home" onload="$('#carousel-example-generic').carousel()">
+<section class="home" >
   <header>
 
 
@@ -166,5 +166,6 @@ padding: 10px 0;"><h2>Cursos Abiertos</h2></div>
   ## show either with or without this extra js for 3 minutes at a time.
 <script type="text/javascript">
   $(window).load(function() {$('#signup_action').trigger("click");});
+  $('#carousel-example-generic').carousel();
 </script>
 % endif
