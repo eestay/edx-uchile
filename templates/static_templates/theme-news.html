@@ -7,8 +7,13 @@
 <section class="container about">
 
 
-<h1>${_("Noticias")}</h1>
-  <div id="nouperss1" class="feedcontainer"></div>
+<div class="row" style="border: 0px;margin:0px;padding:0px;">
+  <div class="col-md-12" style="border-bottom: 1px solid #ddd;">
+    <h1 style="float:left;">${_("Noticias")}</h1>
+  </div>
+</div>  
+
+  <div id="nouperss1" class="feedcontainer" style="border:0px solid #fff;"></div>
 
 
  <script type="text/javascript" language="javascript" >
@@ -28,7 +33,7 @@
         console.log(value);
         var arr = value.link;
         var text = value.content;
-        var thehtml = '<h1><'+value.title+'</h1>  '+' <br>  <p>'+ value.content+'</p>';
+        var thehtml = '<div class="row" style="border-bottom: 1px dotted #000"><div class="col-md12"><h1><i class="fa fa-newspaper-o"></i>  '+value.title+'</h1></div>'+'<div class="col-md12"><p>'+ value.content+'</p></div></div>';
         $(container).append(thehtml);
       });
     }

@@ -14,7 +14,7 @@
   platform_name = microsite.get_value('platform_name', 'UAbierta')
 %>
 
-<section class="home">
+<section class="home" >
   <header>
 
 
@@ -48,12 +48,12 @@
           <h3 style="font-size: 28px;text-shadow: 1px 1px 10px rgba(0,0,0,.9);"></h3>
       </div>
     </div>
-    ##<div class="item">
-    ##  <img src="${static.url('themes/{theme_name}/images/portada/banner3.png'.format(theme_name=settings.THEME_NAME))}">
-    ##  <div class="carousel-caption">
-    ##      <h3 style="font-size: 28px;text-shadow: 1px 1px 10px rgba(0,0,0,.9);"></h3>
-    ##  </div>
-    ##</div>
+    <div class="item">
+      <img src="${static.url('themes/{theme_name}/images/portada/banner3.png'.format(theme_name=settings.THEME_NAME))}">
+      <div class="carousel-caption">
+          <h3 style="font-size: 28px;text-shadow: 1px 1px 10px rgba(0,0,0,.9);"></h3>
+      </div>
+    </div>
   </div>
  
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -62,6 +62,7 @@
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span><img src="${static.url('themes/{theme_name}/images/portada/next.png'.format(theme_name=settings.THEME_NAME))}" class="img-responsive" style="padding-top: 30%;"></span>
   </a>
+
 </div> 
 
 ##              <h1>${_("The Future of Cloud Training")}</h1>
@@ -93,14 +94,12 @@
             </div>
           </section>
           % endif
-
-
       % if show_homepage_promo_video:
       <section class="container">
         <div class="row no-background">
           <div class="col-md-8">
-            <h2 class="h2-white">Universidad Abierta:<br>Democratizando el conocimiento</h2>
-            <h2 class="h2-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus elementum cursus. Nunc ultricies tellus in arcu congue, ut rhoncus eros rhoncus.</h2>
+            <h2 class="h2-blue">Universidad Abierta:<br>Democratizando el conocimiento</h2>
+            <h2 class="h2-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus elementum cursus. Nunc ultricies tellus in arcu congue, ut rhoncus eros rhoncus.</h2>
             </div>
               <div class="col-md-4">
                <a href="#video-modal" class="media" rel="leanModal">
@@ -168,5 +167,13 @@ padding: 10px 0;"><h2>Cursos Abiertos</h2></div>
   ## show either with or without this extra js for 3 minutes at a time.
 <script type="text/javascript">
   $(window).load(function() {$('#signup_action').trigger("click");});
+
 </script>
 % endif
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+      $('#carousel-example-generic').carousel();
+});
+
+</script>
