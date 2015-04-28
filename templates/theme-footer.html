@@ -38,7 +38,7 @@
               <p style="text-align:justify"></p>
               
                    ## <p class="copyright">${_(u"© 2011-2015 {platform_name}, todos los derechos reservados.").format(platform_name=platform_name())} <a href="http://code.edx.org">Open edX.</a>
-                   <p class="copyright">${_(u"© Uabierta, Universidad de Chile, OpenEDX, 2015")} <a href="http://code.edx.org">Open edX.</a>
+                   <p class="copyright"> <a href="http://code.edx.org">${_(u"© Uabierta, Universidad de Chile, OpenEDX, 2015").format(platform_name=platform_name())}</a>
       </p>
           </div>
           <div style="float: left; width: 70%;">
@@ -62,12 +62,12 @@
                     %endif
                     %if settings.MKTG_URL_LINK_MAP.get('TOS'):
                     <li style="">
-                      <a href="${marketing_link('TOS')}">${_("Terms of Service")}</a>
+                      <a href="${marketing_link('TOS')}">${_("Terminos del servicio")}</a>
                     </li>
                     %endif
                     %if settings.MKTG_URL_LINK_MAP.get('HONOR'):
                     <li style="">
-                      <a href="${marketing_link('HONOR')}">${_("Honor Code")}</a>
+                      <a href="${marketing_link('HONOR')}">${_("Código de Honor")}</a>
                     </li>
                     %endif
                     ##%if settings.MKTG_URL_LINK_MAP.get('PRIVACY'):
@@ -90,7 +90,7 @@
                   <lu class="list-inline">
                            <li class="social-item"><a href="https://www.facebook.com/uchile" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
                     </li>
-                    <li class="social-item"><a href="http://www.instagram.com/beacloudgenius" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                    <li class="social-item"><a href="https://instagram.com/uchile/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
                     </li>
                     ##<li class="social-item"><a href="https://www.youtube.com/channel/UCvygomQdqFv_p0c00EYufPA" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
                     ##</li>
