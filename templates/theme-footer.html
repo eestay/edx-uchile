@@ -31,14 +31,14 @@
   <div class="footer-container">
       <div>
           
-          <div  style="float: left; padding-bottom: 10px;">
+          <div  style="float: left; padding-bottom: 4px;">
               <img src="${static.url('themes/{theme_name}/images/portada/logo_bajada_chico.png'.format(theme_name=settings.THEME_NAME))}"/>
                            <p>&nbsp;</p>
 
               <p style="text-align:justify"></p>
               
                    ## <p class="copyright">${_(u"© 2011-2015 {platform_name}, todos los derechos reservados.").format(platform_name=platform_name())} <a href="http://code.edx.org">Open edX.</a>
-                   <p class="copyright">${_(u"© Uabierta, Universidad de Chile, OpenEDX, 2015").format(platform_name=platform_name())} <a href="http://code.edx.org">Open edX.</a>
+                   <p class="copyright">${_(u"© Uabierta, Universidad de Chile, OpenEDX, 2015")} <a href="http://code.edx.org">Open edX.</a>
       </p>
           </div>
           <div style="float: left; width: 70%;">
@@ -70,11 +70,11 @@
                       <a href="${marketing_link('HONOR')}">${_("Honor Code")}</a>
                     </li>
                     %endif
-                    %if settings.MKTG_URL_LINK_MAP.get('PRIVACY'):
-                    <li style="">
-                      <a href="${marketing_link('PRIVACY')}">${_("Privacy Policy")}</a>
-                    </li>
-                    %endif
+                    ##%if settings.MKTG_URL_LINK_MAP.get('PRIVACY'):
+                    ##<li style="">
+                    ##  <a href="${marketing_link('PRIVACY')}">${_("Privacy Policy")}</a>
+                    ##</li>
+                    ##%endif
                     %if settings.MKTG_URL_LINK_MAP.get('AGENDA'):
                     <li style="">
                       <a href="${marketing_link('AGENDA')}">${_("Agenda")}</a>
@@ -84,7 +84,7 @@
               </nav>
           </div>
           <div style="float: right; width: 30%;">
-              <p><b>Follow Us</b></p>
+              <p><b>Síguenos</b></p>
               
               <nav>
                   <lu class="list-inline">
@@ -92,14 +92,14 @@
                     </li>
                     <li class="social-item"><a href="http://www.instagram.com/beacloudgenius" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
                     </li>
-                    <li class="social-item"><a href="https://www.youtube.com/channel/UCvygomQdqFv_p0c00EYufPA" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
-                    </li>
+                    #<li class="social-item"><a href="https://www.youtube.com/channel/UCvygomQdqFv_p0c00EYufPA" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+                    #</li>
                     <li class="social-item"><a href="http://www.twitter.com/beacloudgenius" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
                     </li>
-                    <li class="social-item"><a href="https://plus.google.com/+NileshLondheHere/photos" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
-                    </li>
-                    <li class="social-item"><a href="https://www.linkedin.com/edu/alumni?name=Cloud+Genius" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
-                    </li>
+                    #<li class="social-item"><a href="https://plus.google.com/+NileshLondheHere/photos" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+                    #</li>
+                    #<li class="social-item"><a href="https://www.linkedin.com/edu/alumni?name=Cloud+Genius" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                    #</li>
                 <lu>
               </nav>
           </div>
