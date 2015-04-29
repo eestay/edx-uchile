@@ -288,9 +288,17 @@ p.p-blue{
   font-size: 15px;
   width: 84%;
 }
+
 h2.h2-blue-1{
   color:#00aff0;
   font-size: 20px;
   margin-top: 0px;
 
+}
+.home>header .media .hero{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url("../images/portada/logo_video.png") center no-repeat;
+  background-size: cover;
 }
