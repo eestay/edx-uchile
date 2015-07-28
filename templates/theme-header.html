@@ -29,11 +29,11 @@
                       <a href="${marketing_link('ABOUT')}">${_("UAbierta")}</a>
                     </li>
               %endif
-              %if settings.MKTG_URL_LINK_MAP.get('NEWS'):
-                    <li style="">
-                      <a href="${marketing_link('NEWS')}">${_("Noticias")}</a>
-                    </li>
-              %endif
+              ##%if settings.MKTG_URL_LINK_MAP.get('NEWS'):
+              ##      <li style="">
+              ##        <a href="${marketing_link('NEWS')}">${_("Noticias")}</a>
+              ##      </li>
+              ##%endif
               %if settings.MKTG_URL_LINK_MAP.get('AGENDA'):
                     <li style="">
                       <a href="${marketing_link('AGENDA')}">${_("Agenda")}</a>
