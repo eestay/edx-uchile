@@ -19,7 +19,7 @@
            //console.log(data.responseData.feed);
       //$(container).html('<h2>'+capitaliseFirstLetter(data.responseData.feed.title)+'</h2>');
 
-      $.each(data.items.entries, function(key, value){
+      $.each(data.items, function(key, value){
         //console.log(value);
         var arr = value.link.split('#');
         var text = value.content.split('<strong>Organiza:</strong>');
