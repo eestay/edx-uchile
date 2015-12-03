@@ -33,7 +33,12 @@
         var thehtml = '<div class="row" style="border-bottom: 1px dotted #000"><div class="col-md12"><h1><i class="fa fa-newspaper-o"></i>  '+value.title+'</h1></div>'+'<div class="col-md12"><p>'+ value.content+'</p></div></div>';
         $(container).append(thehtml);
       });
-    }
+    },
+    error: function(xhr, status, error) {
+        var err = eval("(" + xhr.responseText + ")");
+        alert(err.Message);
+   }   
+
   });
 }
 
