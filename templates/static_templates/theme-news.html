@@ -2,7 +2,7 @@
 
 <%inherit file="../main.html" />
 
-<%block name="pagetitle">${_("In the Press")}</%block>
+<%block name="pagetitle">${_("Noticias")}</%block>
 
 <section class="container about">
 
@@ -23,13 +23,10 @@
  */
   function parseRSS(url, container) {
   $.ajax({
-    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
+    url: document.location.protocol + '//rss2json.com/api.json?rss_url=' + encodeURIComponent(url),
     dataType: 'json',
     success: function(data) {
-    //console.log(data.responseData.feed);
-    //$(container).html('<h2>'+capitaliseFirstLetter(data.responseData.feed.title)+'</h2>');
-
-      $.each(data.responseData.feed.entries, function(key, value){
+      $.each(data.items, function(key, value){
         console.log(value);
         var arr = value.link;
         var text = value.content;
@@ -53,7 +50,7 @@ function capitaliseFirstLetter(string) {
   <script type="text/javascript">
 $(function(){
   // running custom RSS functions
-  parseRSS(' http://noticias.uabierta.uchile.cl?feed=atom', '#nouperss1');
+  parseRSS(' http://noticias.uabierta.uchile.cl?feed=rss2', '#nouperss1');
 
 });
 </script>
