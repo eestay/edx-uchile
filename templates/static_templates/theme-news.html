@@ -27,7 +27,6 @@
     dataType: 'json',
     success: function(data) {
       $.each(data.items, function(key, value){
-        console.log(value);
         var arr = value.link;
         var text = value.content;
         var thehtml = '<div class="row" style="border-bottom: 1px dotted #000"><div class="col-md12"><h1><i class="fa fa-newspaper-o"></i>  '+value.title+'</h1></div>'+'<div class="col-md12"><p>'+ value.content+'</p></div></div>';
