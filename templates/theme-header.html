@@ -34,12 +34,7 @@
                       <a href="${marketing_link('NEWS')}">${_("Noticias")}</a>
                     </li>
               %endif
-              %if settings.MKTG_URL_LINK_MAP.get('AGENDA'):
-                    <li style="">
-                      <a href="${marketing_link('AGENDA')}">${_("Agenda")}</a>
-                    </li>
-              %endif
-                            %if settings.MKTG_URL_LINK_MAP.get('FAQ'):
+              %if settings.MKTG_URL_LINK_MAP.get('FAQ'):
                     <li style="">
                       <a href="${marketing_link('FAQ')}">${_("FAQ")}</a>
                     </li>
